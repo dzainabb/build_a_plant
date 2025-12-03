@@ -8,10 +8,10 @@ class Plant:    #start with class for our Plant, add vitals
         self.birthdate = datetime(2024, 5, 6) # find age in days
     # initial vitals(0 =healthy. 10 = unhealthy)
 
-        self.water = 3
-        self.sunlight = 6
-        self.nutrients = 5
-        self.wilt = 1
+        self.water = round(3)
+        self.sunlight = round(6)
+        self.nutrients = round(5)
+        self.wilt = round(1)
 
         self.asleep = False # sleeps at night
         self.dead = False     # not dead at start, will die due to negligence
@@ -35,7 +35,7 @@ class Plant:    #start with class for our Plant, add vitals
     def time(self):     #changes to vitals over time 
         if not self.dead:
             if not self.asleep:    #if plant is awake
-                self.water+=0.3
+                self.water+= 0.3
                 self.nutrients+=0.2
                 self.wilt+= 0.2
             else:
