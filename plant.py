@@ -27,7 +27,7 @@ class Plant:    #start with class for our Plant, add vitals
         print(f"Sunlight Exposure:{self.sunlight}/10")
         print(f"Soil Nutrients:{self.nutrients}/10")
         print(f"Wilting Level:{self.wilt}/10")
-        if self.alseep:
+        if self.asleep:
             print('Status: Sleeping')
         else:
             print('Status: Awake')   #will let user know if it's asleep or awake
