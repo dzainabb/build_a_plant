@@ -82,7 +82,7 @@ class Plant:    #start with class for our Plant, add vitals
             print(f"\033[1mThank you for watering me! My water level is now {self.water}.\033[0m")
         self.health()
 
-    def give_sunlight(self):      #function to give Zau water and to reduce sunlight
+    def give_sunlight(self):      #function to give plant water and to reduce sunlight
         if self.dead:
             print("\033[1mYour plannt is dead, they can't use sunlight.\033[0m")
             return
